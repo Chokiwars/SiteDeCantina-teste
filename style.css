@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--Titulo);
+}
+h2 {
+    color: var(--NomeEscola);
+}
+
+body {
+    background-color: var(--Background);
+}
+
+.container {
+    background-color: var(--DivColor);
+    border-radius: 20px;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto; /* centraliza tudo */
+    padding: 20px;
+}
+
+/* Data no topo */
+.data {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+
+/* Grid dos cards */
+.abaDeCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 15px;
+}
+
+.card {
+    background: var(--CardColor);
+    color: var(--NomeDescricao);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+
+/* -----------------------------
+|         VARIÁVEIS            |
+----------------------------- */
+
+:root {
+/*FUNDOS*/
+    --Background: #282626;
+    --DivColor: #403A3A;
+    --CardColor: #575353;
+    --CircleColor: #1D1A1A;
+    --Botao: #D9D9D9;
+
+/*TEXTOS*/
+    --Titulo: #EAAC01;
+    --NomeEscola: #FFDC80;
+    --DataHorario: #C9AE69;
+    --NomeDescricao: #FFFFFF;
+    --NomeBotao: #282626;
+}
